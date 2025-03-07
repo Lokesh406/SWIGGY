@@ -1,0 +1,165 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+body {
+    background-color: #f8f9fa;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+/* Header */
+.header {
+    background-color: #ce591e;
+    color: rgb(252, 252, 252);
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+/* Help Section */
+.help-container {
+    flex: 1;
+    padding: 50px;
+}
+
+.help-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Help Boxes */
+.help-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.help-box {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.help-box i {
+    font-size: 40px;
+    color: #ff512f;
+    margin-bottom: 10px;
+}
+
+.help-box h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.help-box p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.help-box a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.help-box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    background: #333;
+    color: white;
+    font-size: 1.1rem;
+    border-top: 1px solid #ff9800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    
+}
+
+.footer .developer {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer .developer span {
+    color: #ff9800;
+}
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: FX7522;
+    
+}
+
+.header .left {
+    display: flex;
+    align-items: center;
+}
+
+.header .home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.header .home-link img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.header select {
+    margin-left: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.search-box {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 15px;
+}

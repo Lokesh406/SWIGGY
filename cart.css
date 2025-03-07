@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FF5722;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.header .left {
+    display: flex;
+    align-items: center;
+}
+
+.header .home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.header .home-link img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.header select {
+    margin-left: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.search-box {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 15px;
+}
+
+
+/* Cart Container */
+.cart-container {
+    width: 60%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Cart Items */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+.cart-item:hover {
+    background: #f1f1f1;
+}
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.cart-item img:hover {
+    transform: scale(1.1);
+}
+.quantity button {
+    cursor: pointer;
+    border: none;
+    background: #ff6600;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.quantity button:hover {
+    background: #e65c00;
+}
+
+/* Cart Summary */
+.cart-summary {
+    text-align: center;
+    padding: 20px;
+    background: #cac0b3;
+    color: rgb(236, 37, 37);
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+.cart-summary:hover {
+    transform: scale(1.05);
+}
+.checkout-btn {
+    background: yellow;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.checkout-btn:hover {
+    background: #ffcc00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
