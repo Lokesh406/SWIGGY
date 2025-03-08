@@ -13,6 +13,7 @@ body {
     align-items: center;
     padding: 15px 20px;
     background: rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 .header .left {
@@ -28,14 +29,8 @@ body {
 }
 
 .header .home-link img {
-    width: 40px;
-    margin-right: 10px;
-}
-
-.header select {
-    margin-left: 15px;
-    padding: 5px;
-    border-radius: 5px;
+    width: 35px;
+    margin-right: 8px;
 }
 
 .nav-links {
@@ -46,8 +41,8 @@ body {
 .nav-item {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 1rem;
+    margin: 0 8px;
+    font-size: 0.95rem;
 }
 
 .search-box {
@@ -57,7 +52,6 @@ body {
     margin-left: 15px;
 }
 
-
 /* Cart Container */
 .cart-container {
     width: 60%;
@@ -66,7 +60,6 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.5s ease-in-out;
 }
 
 /* Cart Items */
@@ -76,20 +69,14 @@ body {
     justify-content: space-between;
     padding: 15px;
     border-bottom: 1px solid #ddd;
-    transition: background 0.3s;
 }
-.cart-item:hover {
-    background: #f1f1f1;
-}
+
 .cart-item img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 10px;
-    transition: transform 0.3s;
 }
-.cart-item img:hover {
-    transform: scale(1.1);
-}
+
 .quantity button {
     cursor: pointer;
     border: none;
@@ -97,10 +84,6 @@ body {
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    transition: background 0.3s;
-}
-.quantity button:hover {
-    background: #e65c00;
 }
 
 /* Cart Summary */
@@ -111,11 +94,8 @@ body {
     color: rgb(236, 37, 37);
     border-radius: 10px;
     margin-top: 20px;
-    transition: transform 0.3s;
 }
-.cart-summary:hover {
-    transform: scale(1.05);
-}
+
 .checkout-btn {
     background: yellow;
     color: black;
@@ -124,23 +104,112 @@ body {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    transition: background 0.3s;
-}
-.checkout-btn:hover {
-    background: #ffcc00;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
+    background-color: #333;
     color: white;
-    margin-top: 50px;
+    padding: 10px ;
+    align-items: center;
+    margin-top: 40px;
+    text-align: center;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
+.footer-bottom {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #444;
+}
+
+.footer-bottom .footer-rights {
+    font-size: 0.8rem;
+    color: #ccc;
+    
+    margin: 5px 0;
+   
+}
+
+.footer-bottom .footer-rights strong {
+    color: #FF5722;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #FF5722;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #FF5722;
+}
+
+.footer-section.social-links .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-section.social-links img {
+    width: 20px; /* Smaller social icons */
+    height: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section.social-links img:hover {
+    opacity: 0.7;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-section.social-links .social-icons {
+        justify-content: center;
+    }
 }
